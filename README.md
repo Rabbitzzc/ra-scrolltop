@@ -25,5 +25,7 @@ yarn run test
 yarn run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 字段含义
+1. bottom: 组件离底部的位置
+2. right：组件离右边的位置
+3. speed：表示向上滑动的速速 ['average', 'fast-to-slow','immediate']
