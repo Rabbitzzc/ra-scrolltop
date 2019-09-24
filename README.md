@@ -55,4 +55,4 @@ components: { RaScrolltop }
 
 ## MIT
 
-[LICENCE](LICENCE.md)
+[LICENCE](LICENCE)

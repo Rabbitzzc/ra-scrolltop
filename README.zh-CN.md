@@ -2,7 +2,7 @@
 # ra-scrolltop
 🌝一个返回到页面顶部的vue组件。
 
-- [中文]((README.zh-CN.md))
+- [中文](README.zh-CN.md)
 - [English](README.md)
 ## demo
 
@@ -56,4 +56,4 @@ components: { RaScrolltop }
 
 ## MIT
 
-[LICENCE](LICENCE.md)
+[LICENCE](LICENCE)
