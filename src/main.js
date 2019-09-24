@@ -1,8 +1,12 @@
-import Vue from 'vue'
-import App from './App.vue'
+import RaScrolltop from './ra-scrolltop.vue'
 
-Vue.config.productionTip = false
+RaScrolltop.install = function (Vue) {
+    Vue.component(RaScrolltop.name, RaScrolltop)
+}
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+/* supports the use of tags to introduce */
+if (typeof window !== 'undefined' && window.Vue) {
+    window.Vue.component(RaScrolltop.name, RaScrolltop)
+}
+
+export default RaScrolltop

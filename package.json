@@ -1,7 +1,13 @@
 {
   "name": "ra-scrolltop",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "main": "dist/ra-scrolltop.min.js",
+  "author": "Rabbit zzc <zzclovelcs@gmail.com>",
+  "keywords": [
+    "vue",
+    "scroll-top"
+  ],
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -43,5 +49,10 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rabbitzzc/ra-scrolltop"
+  },
+  "license": "MIT"
 }

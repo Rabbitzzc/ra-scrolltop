@@ -1,7 +1,7 @@
 # ra-scrolltop
 🌝A vue component that goes back to the top of the page.
 
-- [中文]((README.zh-CN.md))
+- [中文](README.zh-CN.md)
 - [English](README.md)
 ## demo
 
@@ -28,7 +28,7 @@ import RaScrolltop from 'ra-scrolltop'
 Vue.use(RaScrolltop)
 ```
 Or on a single component
-单组件使用
+Import for global usage
 ```js
 import RaScrolltop from 'ra-scrolltop'
 ...
