@@ -19,8 +19,7 @@ yarn add ra-scrolltop
 ```
 
 ## import and use
-
-全局使用 
+Import for global usage
 ```js
 import Vue from 'vue'
 import RaScrolltop from 'ra-scrolltop'
@@ -28,7 +27,6 @@ import RaScrolltop from 'ra-scrolltop'
 Vue.use(RaScrolltop)
 ```
 Or on a single component
-Import for global usage
 ```js
 import RaScrolltop from 'ra-scrolltop'
 ...
