@@ -1,6 +1,6 @@
 {
   "name": "ra-scrolltop",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/ra-scrolltop.min.js",
   "author": "Rabbit zzc <zzclovelcs@gmail.com>",
   "keywords": [
