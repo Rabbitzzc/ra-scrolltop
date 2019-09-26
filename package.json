@@ -1,16 +1,19 @@
 {
   "name": "ra-scrolltop",
-  "version": "1.0.3",
-  "main": "dist/ra-scrolltop.min.js",
+  "version": "1.0.4",
+  "main": "lib/ra-scrolltop.umd.min.js",
   "author": "Rabbit zzc <zzclovelcs@gmail.com>",
+  "description": "🌝A vue component that goes back to the top of the page.",
   "keywords": [
     "vue",
-    "scroll-top"
+    "scroll-top",
+    "ra-scrolltop"
   ],
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "lib": "vue-cli-service build --target lib --name ra-scrolltop --dest lib ./src/main.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
