@@ -59,7 +59,7 @@ default
 </ra-scrolltop>
 
 ```
-It's possible to use your own html/vue component inside vue-backtotop component
+It's possible to use your own html/vue component inside vue-backtotop component.
 ```html
 <ra-scrolltop>
     <button>Top</button>
@@ -67,9 +67,14 @@ It's possible to use your own html/vue component inside vue-backtotop component
 ```
 
 Now, you can add some props
+```
 <ra-scrolltop right="50px" bottom="20px" speed="immediate">
     <button>Top</button>
 </ra-scrolltop>
+```
+
+## Note
+I am sorry that before version 1.0.3, I forgot to export the install function, which resulted in the undefined error of the component.
 
 ## MIT
 
