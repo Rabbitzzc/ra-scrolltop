@@ -3,9 +3,11 @@
 
 - [中文](README.zh-CN.md)
 - [English](README.md)
+
+
 ## demo
 
-see demo
+<!-- see demo -->
 
 ## install by npm or yarn
 
@@ -50,6 +52,24 @@ components: { RaScrolltop }
 |scrolled|Fired when page's scroll ends|
 
 ## How to use
+
+default
+```html
+<ra-scrolltop>
+</ra-scrolltop>
+
+```
+It's possible to use your own html/vue component inside vue-backtotop component
+```html
+<ra-scrolltop>
+    <button>Top</button>
+</ra-scrolltop>
+```
+
+Now, you can add some props
+<ra-scrolltop right="50px" bottom="20px" speed="immediate">
+    <button>Top</button>
+</ra-scrolltop>
 
 ## MIT
 

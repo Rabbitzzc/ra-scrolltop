@@ -4,9 +4,11 @@
 
 - [中文](README.zh-CN.md)
 - [English](README.md)
+
+
 ## demo
 
-see demo
+<!-- see demo -->
 
 ## 通过 npm 或 yarn 安装
 
@@ -51,8 +53,30 @@ components: { RaScrolltop }
 |---|---|
 |scrolled|页面滚动结束时触发|
 
-## How to use
+## 如何使用
 
+默认
+```html
+<ra-scrolltop>
+</ra-scrolltop>
+```
+
+可以在vue-backtotop组件内使用您自己的html / vue组件
+```html
+<ra-scrolltop>
+    <button>Top</button>
+</ra-scrolltop>
+```
+
+现在，可以加上一些参数
+```html
+<ra-scrolltop right="50px" bottom="20px" speed="immediate">
+    <button>Top</button>
+</ra-scrolltop>
+```
+
+## 备注
+我很抱歉在1.0.3版本之前，忘记导出了install函数，导致出现组件未undefined的错误
 
 ## MIT
 
