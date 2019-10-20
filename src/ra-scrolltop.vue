@@ -10,9 +10,18 @@
       @click="scrollToTop"
     >
       <slot>
-        <div class="default">
-          <div class="scroll-to-top-circle">
-            <div class="scroll-to-top-circle-triangle"></div>
+        <div class="rabbit-slot-custom">
+          <div class="scroll-circle" v-if="theme === 'scroll-circle'">
+            <div class="scroll-circle-triangle"></div>
+          </div>
+          <div class="orange" v-else-if="theme === 'orange'">
+            <div class="orange-scroll-item">🖕🏻</div>
+          </div>
+          <div class="rocket" v-else-if="theme === 'rocket'">
+            <div class="rocket-scroll-item">🚀</div>
+          </div>
+          <div class="rectangular" v-else-if="theme === 'rectangular'">
+              <div class="rectangular-scroll-item">Go Top</div>
           </div>
         </div>
       </slot>
@@ -35,12 +44,22 @@ export default {
         },
         speed: {
             type: String,
-            default: 'average'
+            default: 'average',
+            validator: function(value) {
+                return ['average', 'fast-to-slow','immediate'].indexOf(value) !== -1
+            }
         },
         offset: {
             type: [String, Number],
             default: 600
         },
+        theme: {
+            type: String,
+            default: 'scroll-circle',
+            validator: function(value) {
+                return ['scroll-circle', 'orange', 'rocket', 'rectangular'].indexOf(value) !== -1
+            }
+        }
     },
     data() {
         return {
@@ -111,7 +130,7 @@ export default {
   background: transparent;
 }
 
-.scroll-to-top-circle {
+.rabbit-slot-custom .scroll-circle {
   position: relative;
   width: 30px;
   height: 30px;
@@ -119,7 +138,7 @@ export default {
   background-color: #f2f5f6;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.12);
 }
-.scroll-to-top-circle-triangle {
+.rabbit-slot-custom .scroll-circle .scroll-circle-triangle {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -128,6 +147,38 @@ export default {
   width: 0;
   height: 0;
   border: 8px solid transparent;
-  border-bottom: 8px solid #579FF8;
+  border-bottom: 8px solid #579ff8;
+}
+
+.rabbit-slot-custom .orange .orange-scroll-item {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: #ff9800;
+  text-align: center;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 20px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+}
+.rabbit-slot-custom .orange .orange-scroll-item:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+.rabbit-slot-custom .rocket .rocket-scroll-item {
+    font-size: 30px;
+}
+
+.rabbit-slot-custom .rectangular .rectangular-scroll-item  {
+	text-decoration: none;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.3);
+	font-size: 12px;
+	padding: 10px;
+}
+
+.rabbit-slot-custom .rectangular .rectangular-scroll-item:hover {
+	background-color: rgba(0, 0, 0, 0.6);
 }
 </style>
