@@ -1,6 +1,6 @@
 {
   "name": "ra-scrolltop",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "main": "lib/ra-scrolltop.umd.min.js",
   "author": "Rabbit zzc <zzclovelcs@gmail.com>",
   "description": "🌝A vue component that goes back to the top of the page.",
